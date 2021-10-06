@@ -1,11 +1,8 @@
 const express = require('express');
-const { readFile, writeFile, appendFile } = require('fs/promises');
-const { parse } = require('path');
+const { readFile, writeFile } = require('fs/promises');
 const app = express();
 
 app.use(express.json());
-
-
 
 
 app.post('/pets', async (req, res) => {
